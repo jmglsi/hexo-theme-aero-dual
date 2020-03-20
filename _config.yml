@@ -1,10 +1,11 @@
 # Header Menu
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
+  推特: https://twitter.com/jmglsi
   # change github and email values to your own addresses
-  Github: https://github.com/<your-github-username>
-  Email: mailto:<your-email-address>
+  # Github: https://github.com/<your-github-username>
+  # Email: mailto:<your-email-address>
 rss: /atom.xml
 
 # Set to false to disable banner
@@ -35,7 +36,7 @@ archive_type: 'monthly'
 show_count: false
 
 # favicon
-favicon: /favicon.png
+favicon: /favicon.ico
 
 # Google Analytics Tracking ID
 google_analytics:
