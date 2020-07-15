@@ -3,12 +3,14 @@
     <script>
         var scrollHeight = document.body.scrollHeight;
         var toc = document.getElementById("toc");
-        document.addEventListener("scroll", function() {
-            var scrollTop = document.scrollTop || window.pageYOffset || document.body.scrollTop;
-            var newTop = 425 * (1 - scrollTop / scrollHeight);
-            if (newTop < 25) newTop = 25;
-            toc.style.top = newTop + "px";
-        });
+        if (toc) {
+            document.addEventListener("scroll", function() {
+                var scrollTop = document.scrollTop || window.pageYOffset || document.body.scrollTop;
+                var newTop = 425 * (1 - scrollTop / scrollHeight);
+                if (newTop < 25) newTop = 25;
+                toc.style.top = newTop + "px";
+            });
+        }
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
